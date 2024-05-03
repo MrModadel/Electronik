@@ -535,10 +535,9 @@ $font3: "Helvetica", sans-serif;
         border-radius: 20px;
         margin-top: 85px;
     }
-&__box{
-    padding: 70px 0 70px 62px;
-
-}
+    &__box {
+        padding: 70px 0 70px 62px;
+    }
     &__title {
         font-family: $second-family;
         font-weight: 600;
@@ -569,11 +568,12 @@ $font3: "Helvetica", sans-serif;
         outline: 0;
         margin-bottom: 24px;
     }
-    &__img{
+    &__img {
         position: relative;
-        img{
+        img {
             position: absolute;
-            right: 0;bottom: 0;
+            right: 0;
+            bottom: 0;
         }
     }
     label {
@@ -645,4 +645,66 @@ $font3: "Helvetica", sans-serif;
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+//footer////////////////////////////////////////////////////////////////////////////////////////////
+
+.footer {
+    background: linear-gradient(152deg, #1f66ea 2.99%, #03196f 100%);
+    &__container {
+        margin-top: 136px;
+    }
+    &__box {
+        padding: 170px 0 88px;
+    }
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 43px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: #fff;
+    }
+
+    &__p {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #d2d2d2;
+
+        margin-top: 21px;
+        margin-bottom: 72px;
+    }
+
+    &__btn-box {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 152px;
+    }
+
+    &__a {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: rgba(210, 210, 210, 0.5);
+    }
+    &__img {
+        position: relative;
+        img {
+            position: absolute;
+            right: -20%;
+            bottom: 0px;
+        }
+    }
+}
+.container {
+}
+.btn-white {
 }
