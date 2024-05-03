@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('/public/Fonts/Helvetica/Helvetica.css');
+$font-family: "Inter", sans-serif;
+$second-family: "Poppins", sans-serif;
+$third-family: "SF UI Display", sans-serif;
+$font3: "Helvetica", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 222px;
+
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    &__item {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 17px;
+        color: #1d1d1f;
+        cursor: pointer;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    &__elem {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        border-radius: 12px;
+        background-color: #1d1d1f;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    &__phNum {
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 12px;
+        padding: 14px 20px;
+        width: 207px;
+        height: 47px;
+        background: #3858d6;
+    }
+}
+.whatsapp {
+}
+.telegram {
+}
