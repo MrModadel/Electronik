@@ -1,34 +1,207 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="/style/style.scss">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container container">
-          <div class="header__left">
-            <img src="/public/icons/Logo.svg" alt="Logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="/style/style.scss">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class=" container header__container ">
+        <img class="logotip" src="/public/icons/Logo.svg" alt="Logo">
+        <nav class="menu">
+          <span class="menu__item">Прайс-лист</span>
+          <span class="menu__item">Дропшиппинг</span>
+          <span class="menu__item">Контакты</span>
+        </nav>
+        <div class="contact">
+          <a href="#" class="whatsapp contact__elem"><img src="/public/icons/whatsapp.svg" alt="whatsapp"></a>
+          <a href="#" class="telegram contact__elem"><img src="/public/icons/telegram.svg" alt="telegram"></a>
+          <div class="contact__phNum">+ 7 (930) 238-00-00</div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <div class="ad">
+          <div class="ad__wrapper">
+            <div class="ad__left">
+              <div class="ad__title">Оптовые поставки восстановленных и б/у телефонов</div>
+              <div class="ad__cup">Лучшие цены на айфоны оптом, с доставкой по РФ
+                и СНГ</div>
+              <div class="ad__btns">
+                <button class="btn">Посмотреть прайс-лист</button>
+                <button class="btn-sec"><img src="/public/icons/Play_Circle.svg" alt="Play">Посмотреть приветственное
+                  видео
+              </div>
+            </div>
+            <div class="ad__right">
+              <img src="/public/icons/iphone.png" alt="Phone" class="ad__img">
+            </div>
           </div>
-          <div class="header__right">
-            <nav class="menu">
-              <span class="menu__item">Прайс-лист</span>
-              <span class="menu__item">Дропшиппинг</span>
-              <span class="menu__item">Контакты</span>
-            </nav>
-            <div class="contact">
-              <a href="#" class="whatsapp contact__elem"><img src="/public/icons/whatsapp.svg" alt="whatsapp"></a>
-              <a href="#" class="telegram contact__elem"><img src="/public/icons/telegram.svg" alt="telegram"></a>
-              <div class="contact__phNum">+ 7 (930) 238-00-00</div>
+
+        </div>
+        <div class="price-list">
+          <div class="price-list__container">
+            <div class="price-list__title-box">
+              <div class="price-list__title">Ассортимент</div>
+              <div class="price-list__sup">На все наши товары действует<span> гарантия на 2 месяца </span></div>
+            </div>
+            <div class="price-list__items pl">
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span><span>REF</span></span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
+              <div class="pl__item">
+                <img src="/public/icons/pl_one.png" alt="">
+                <div class="pl__title">Iphone <span>REF</span></div>
+                <p class="pl__p">Восстановленные телефоны на фабрике</p>
+                <button class="btn">Посмотреть</button>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+        <div class="ad">
+          <div class="ad__wrapper" style="background: linear-gradient(135deg, #7caaff 0%, #1f66ea 100%);">
+            <div class="ad__left" style="padding: 95px 0;">
+              <div class="ad__title">Зарабатывайте на перепродаже
+                телефонов вместе с нами!</div>
+              <div class="ad__cup">Надежный поставщик телефонов iPhone. Мы минимизируем процент брака. И контролируем
+                точные сроки доставок</div>
+              <p class="ad__p">Напишите нам и мы ответим на все вопросы</p>
+              <div class="ad__btns">
+
+                <button class="btn-white">Telegram <img src="/public/icons/telegram-black.svg" alt="#"></button>
+                <button class="btn-white">WhatsApp <img src="/public/icons/whatsapp-black.svg" alt="&"></button>
+              </div>
+            </div>
+            <div class="ad__right">
+              <img src="/public/icons/phones.png" style="width: 130%; transform: translateX(-23%);" alt="Phone"
+                class="ad__img">
+              <img src="/public/icons/discount.png" alt="Discount" class="ad__img-sec">
+            </div>
+          </div>
+
+        </div>
+        <div class="brands">
+          <div class="brands__wrapper">
+            <img src="/public/icons/Apple.png" alt="Apple" class="brands__item">
+            <img src="/public/icons/huawei.png" alt="Huawei" class="brands__item">
+            <img src="/public/icons/honor.png" alt="Honor" class="brands__item">
+            <img src="/public/icons/samsung.png" alt="Samsung" class="brands__item">
+            <img src="/public/icons/oppo.png" alt="Oppo" class="brands__item">
+            <img src="/public/icons/xiaomi.png" alt="Xiaomi" class="brands__item">
+          </div>
+        </div>
+        <div class="about-us">
+          <div class="about-us__wrapper">
+            <div class="about-us__title-box">
+              <div class="about-us__title">О нас</div>
+              <p class="about-us__p">Компания “Электроник” работает с 2017 года. За это время мы завоевали доверие наших клиентов. Наша задача - минимизировать все риски и доставить Вам товар наивысшего качества</p>
+            </div>
+            <div class="about-us__inform inform">
+              <div class="inform__elem">
+                <div class="inform__title">120+</div>
+                <p class="inform__p">Партнеров по всей Росии
+                  и СНГ</p>
+              </div>
+              <div class="inform__elem">
+                <div class="inform__title">7 лет</div>
+                <p class="inform__p">На протяжении этого времени
+                  мы радуем своих клиентов</p>
+              </div>
+              <div class="inform__elem">
+                <div class="inform__title">3%</div>
+                <p class="inform__p">Максимальный процент брака 
+                  на партию в 1000 штук</p>
+              </div>
+              <div class="inform__elem">
+                <div class="inform__title">60 дней</div>
+                <p class="inform__p">Гарантия на все устройства
+                  от нашей компании</p>
+              </div>
+            </div>
+            <div class="about-us__quality quality">
+              <div class="quality__item">
+                <div class="quality__title">Качество</div>
+                <p class="quality__p">Проверка каждого устройства перед отправкой</p>
+                <div class="quality__img-box">
+                  <img src="/public/icons/like.png" alt="like">
+                </div>
+              </div>
+              <div class="quality__item">
+                <div class="quality__title">Скорость</div>
+                <p class="quality__p">Отправка в течении 24 часов после оплаты</p>
+                <div class="quality__img-box">
+                  <img src="/public/icons/rocket.png" alt="rocket">
+                </div>
+              </div>
+              <div class="quality__item">
+                <div class="quality__title">Личный менеджер</div>
+                <p class="quality__p">На связи 24/7. Ответим на все вопросы</p>
+                <div class="quality__img-box">
+                  <img src="/public/icons/call.png" alt="call">
+                </div>
+              </div>
+              <div class="quality__item">
+                <div class="quality__title">Подарки</div>
+                <p class="quality__p">К каждому заказу мы кладем защитные 
+                  стекла, чехлы</p>
+                <div class="quality__img-box">
+                  <img src="/public/icons/suprice.png" alt="suprice">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

@@ -1,42 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-@import url('/public/Fonts/Helvetica/Helvetica.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("/public/Fonts/Helvetica/Helvetica.css");
 $font-family: "Inter", sans-serif;
 $second-family: "Poppins", sans-serif;
 $third-family: "SF UI Display", sans-serif;
 $font3: "Helvetica", sans-serif;
+@mixin no-select() {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.container {
+    max-width: 1470px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
+
+//header////////////////////////////////////////////////////////////////////////////////////////////
 .header {
     &__container {
+        margin: 20px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &__left {
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-        cursor: pointer;
-
-    }
-
-    &__right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 222px;
-
+        .logotip {
+            @include no-select();
+        }
     }
 }
 
@@ -50,11 +47,7 @@ $font3: "Helvetica", sans-serif;
         font-weight: 500;
         font-size: 17px;
         color: #1d1d1f;
-        cursor: pointer;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
+        @include no-select();
     }
 }
 .contact {
@@ -63,7 +56,6 @@ $font3: "Helvetica", sans-serif;
     align-items: center;
     gap: 6px;
     &__elem {
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,17 +63,11 @@ $font3: "Helvetica", sans-serif;
         height: 47px;
         border-radius: 12px;
         background-color: #1d1d1f;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
+        @include no-select();
     }
 
     &__phNum {
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
+        @include no-select();
         font-family: $font-family;
         font-weight: 700;
         font-size: 16px;
@@ -96,4 +82,360 @@ $font3: "Helvetica", sans-serif;
 .whatsapp {
 }
 .telegram {
+}
+
+//main////////////////////////////////////////////////////////////////////////////////////////////
+.main {
+    &__container {
+    }
+}
+
+//ads////////////////////////////////////////////////////////////////////////////////////////////
+.ad {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 54% 46%;
+        justify-content: space-between;
+        align-items: end;
+        background: linear-gradient(135deg, #8fa6ff 0%, #3858d6 100%);
+        border-radius: 20px;
+        padding: 0 0 0 64px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 110px 0;
+    }
+
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 57px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: #f5f5f7;
+    }
+
+    &__cup {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #efefef;
+
+        margin-top: 21px;
+    }
+
+    &__p {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #efefef;
+
+        margin-top: 36px;
+    }
+
+    &__btns {
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__right {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    &__img {
+        border-radius: 20px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
+    &__img-sec {
+        border-radius: 20px;
+        left: 360px;
+        bottom: 300px;
+        width: 36%;
+        position: absolute;
+    }
+}
+
+//price-list////////////////////////////////////////////////////////////////////////////////////////////
+.price-list {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin: 64px 0 92px;
+    }
+
+    &__title-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 43px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #1d1d1f;
+    }
+
+    &__sup {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #1d1d1f;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__items {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 48px 120px;
+    }
+}
+.pl {
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 264px;
+    }
+
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: #1d1d1f;
+
+        margin-top: 32px;
+
+        span {
+            color: #3858d6;
+        }
+    }
+
+    &__p {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #8b8e99;
+
+        margin: 8px 0 16px 0;
+    }
+}
+//Brands////////////////////////////////////////////////////////////////////////////////////////////
+
+.brands {
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+
+    &__item {
+    }
+}
+
+//About-us////////////////////////////////////////////////////////////////////////////////////////////
+
+.about-us {
+    &__wrapper {
+    }
+
+    &__title-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 21px;
+
+        margin-top: 85px;
+    }
+
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 43px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #1d1d1f;
+    }
+
+    &__p {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #3c3c3c;
+
+        max-width: 600px;
+    }
+
+    &__inform {
+        margin: 85px 0 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 96px;
+    }
+
+    &__quality {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+    }
+}
+.inform {
+    &__elem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__title {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 36px;
+        text-align: center;
+        color: #3858d6;
+    }
+
+    &__p {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #3c3c3c;
+    }
+}
+.quality {
+    &__item {
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 42px 30px 10px 42px;
+    }
+    &__item:nth-child(1){
+        background: linear-gradient(135deg, #5792ff 0%, #9cbfff 100%);
+    }
+    &__item:nth-child(2){
+        background: linear-gradient(315deg, #fc7e9a 0%, #f5535d 100%);
+    }
+    &__item:nth-child(3){
+        background: linear-gradient(134deg, #9be700 0%, #c8ec8c 100%);
+    }
+    &__item:nth-child(4){
+        background: linear-gradient(135deg, #ff9128 0%, #ffcc9c 100%);
+    }
+    &__title {
+        font-family: $second-family;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 125%;
+        letter-spacing: -0.01em;
+        color: #1d1d1f;
+    }
+
+    &__p {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #3c3c3c;
+        margin: 16px 0 24px ;
+    }
+
+    &__img-box {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
+
+//Buttons////////////////////////////////////////////////////////////////////////////////////////////
+
+.btn,
+.btn-sec {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
+}
+.btn {
+    border-radius: 12px;
+    padding: 21px 24px;
+
+    background: #3858d6;
+    border: 0;
+}
+.btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 12px;
+    padding: 18px 24px;
+    border: 0;
+    background: #1d1d1f;
+}
+.btn-white {
+    border-radius: 12px;
+    padding: 21px 24px;
+    background: #fff;
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
