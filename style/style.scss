@@ -119,6 +119,8 @@ $font3: "Helvetica", sans-serif;
         font-weight: 500;
         font-size: 17px;
         color: #1d1d1f;
+        text-decoration: none;
+
         @include no-select();
     }
 }
@@ -645,6 +647,12 @@ $font3: "Helvetica", sans-serif;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 125%;
+    text-align: center;
+    color: #fff;
 }
 
 //footer////////////////////////////////////////////////////////////////////////////////////////////
@@ -703,8 +711,4 @@ $font3: "Helvetica", sans-serif;
             bottom: 0px;
         }
     }
-}
-.container {
-}
-.btn-white {
 }
