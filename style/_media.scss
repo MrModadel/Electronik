@@ -1,0 +1,207 @@
+@media (max-width: 1315px) {
+    .ad__wrapper {
+        padding: 0 0 0 36px;
+    }
+    .ad__left {
+        padding: 60px 0;
+    }
+    .ad__title {
+        font-size: 46px;
+    }
+    .btn-sec {
+        font-size: 15px;
+    }
+    .form__img img {
+        width: 34%;
+    }
+}
+@media (max-width: 1025px) {
+    .ad__title {
+        font-size: 35px;
+    }
+    .ad__btns {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .payment__wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .box-items {
+        grid-template-columns: 1fr;
+    }
+    .form__img img {
+        width: 28%;
+    }
+    .footer__img img {
+        position: absolute;
+        right: -21%;
+    }
+    .box-items .box-item__img {
+        width: 100%;
+        img {
+            width: 30%;
+        }
+    }
+    .steps__wrapper {
+        width: 90%;
+    }
+    .steps .progress-bar {
+        width: 74%;
+    }
+}
+@media (max-width: 925px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+    }
+    .steps__wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 834px) {
+    .price-list-about-us {
+        .inform__elem:last-child {
+            grid-column: 1/3;
+        }
+    }
+    .contacts{
+        .ad__wrapper {
+            background: transparent;
+            padding: 48px;
+            grid-template-columns:1fr ;
+        
+        }
+        .ad__img{
+            position:static;
+        }
+    }
+    .dr-step {
+        .ad__wrapper{
+            grid-template-columns: 1fr !important;
+            padding: 0 48px !important;
+        }
+        .ad__right {
+            display: none;
+        }
+    }
+    .price-list-ad-right {
+        display: none;
+    }
+    .ad-no {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ad__left {
+            justify-content: center;
+            align-items: center;
+            &-img {
+                display: block;
+                margin-top: 46px;
+            }
+        }
+    }
+    .steps__item-p {
+        font-size: 16px;
+    }
+    .menu {
+        display: none;
+    }
+    .but-menu {
+        display: flex;
+    }
+    .ad__img {
+        width: 150%;
+    }
+    .ad__wrapper {
+        border-radius: 0;
+    }
+    .ad__imgSec {
+        display: none;
+    }
+    .ad__img-sec {
+        bottom: 150px;
+        width: 100%;
+    }
+    .brands__item {
+        width: 12%;
+        &:last-child {
+            width: 5%;
+        }
+    }
+    .about-us__inform {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 85px;
+    }
+    .quality__item {
+        padding: 24px 24px 16px 24px;
+        font-size: 19px;
+
+        img {
+            width: 40%;
+        }
+    }
+    .frst-img {
+        width: 46% !important;
+    }
+    .box-items .box-item__img {
+        width: 100%;
+
+        img {
+            width: 36%;
+        }
+    }
+    .payment {
+        .box-items .box-item__img {
+            width: 100%;
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .transportCo,
+    .fullfillment {
+        height: 356px;
+    }
+    .delevery__gallary {
+        gap: 15px;
+        margin-bottom: 15px;
+        img {
+            width: 16%;
+        }
+        img:nth-child(2) {
+            width: 36%;
+        }
+    }
+    .delevery__title {
+        font-size: 17px;
+    }
+    .delevery__container {
+        padding: 0 36px;
+    }
+    .form__img {
+        img {
+            display: none;
+        }
+    }
+    .footer__p {
+        max-width: 445px;
+    }
+    .footer__img img {
+        right: -41%;
+    }
+    .form {
+        padding: 0 48px;
+        &__box {
+            padding: 37px;
+        }
+    }
+    .chech-box {
+        br {
+            display: none;
+        }
+    }
+}

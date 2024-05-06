@@ -12,11 +12,15 @@ $font3: "Helvetica", sans-serif;
     user-select: none;
     cursor: pointer;
 }
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
 .container {
     max-width: 1470px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 18px;
 }
 * {
     margin: 0;
@@ -103,6 +107,7 @@ $font3: "Helvetica", sans-serif;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 15px;
         .logotip {
             @include no-select();
         }
@@ -180,12 +185,12 @@ $font3: "Helvetica", sans-serif;
     }
     &__a {
         font-family: $font-family;
-font-weight: 400;
-font-size: 17px;
-line-height: 125%;
-letter-spacing: 0.01em;
-color: #3c3c3c;
-text-decoration: none;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #3c3c3c;
+        text-decoration: none;
     }
     &__advice {
     }
@@ -215,6 +220,9 @@ text-decoration: none;
         justify-content: center;
         align-items: flex-start;
         padding: 110px 0;
+        &-img{
+            display: none;
+        }
     }
 
     &__title {
@@ -271,7 +279,7 @@ text-decoration: none;
     }
     &__img-sec {
         border-radius: 20px;
-        left: 360px;
+        right: 0;
         bottom: 300px;
         width: 36%;
         position: absolute;
@@ -286,7 +294,7 @@ text-decoration: none;
         align-items: center;
         flex-direction: column;
 
-        margin: 64px 0 92px;
+        margin: 64px auto 92px;
     }
 
     &__items {
@@ -295,7 +303,7 @@ text-decoration: none;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 48px 120px;
+        gap: 48px 100px;
     }
 }
 .pl {
@@ -752,11 +760,23 @@ text-decoration: none;
         margin-top: 1px;
     }
 }
-
+.dr-step{
+    progress-bar {
+        position: absolute;
+        height: 2px;
+        width: 77%;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        top: 7px;
+        background: #3858d6;
+        z-index: -1;
+    }
+}
 .steps .progress-bar {
     position: absolute;
     height: 2px;
-    width: 80%;
+    width: 77%;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
@@ -927,8 +947,31 @@ text-decoration: none;
         position: relative;
         img {
             position: absolute;
-            right: -20%;
+            right: -10%;
             bottom: 0px;
         }
     }
 }
+//other
+.but-menu {
+    
+    border-radius: 12px;
+    width: 47px;
+    height: 47px;
+    background: #1d1d1f;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    span {
+        display: block;
+        height: 1.2px;
+        border-radius: 2px;
+        width: 16px;
+        background-color: #fff;
+    }
+}
+
+@import "media";

@@ -11,8 +11,14 @@
             max-width: 300px;
         }
 
-        .steps__wrapper {
+        .steps__wrapper container {
             width: 100%;
+        }
+
+        .ad__wrapper {
+            background: transparent;
+            padding: 0;
+            grid-template-columns: 40% 60%;
         }
     </style>
 </head>
@@ -21,34 +27,40 @@
     <div class="wrapper">
         <header class="header">
             <div class=" container header__container ">
-                <img class="logotip" src="/public/icons/Logo.svg" alt="Logo">
+                <a href="/"><img class="logotip" src="/public/icons/Logo.svg" alt="Logo"></a>
                 <nav class="menu">
                     <a href="/pages/price-list/" class="menu__item">Прайс-лист</a>
                     <a href="/pages/dropshipping/" class="menu__item">Дропшиппинг</a>
-                    <a href="pages/contacts/" class="menu__item">Контакты</a>
+                    <a href="/pages/contacts/" class="menu__item">Контакты</a>
                 </nav>
                 <div class="contact">
                     <a href="#" class="whatsapp contact__elem"><img src="/public/icons/whatsapp.svg" alt="whatsapp"></a>
                     <a href="#" class="telegram contact__elem"><img src="/public/icons/telegram.svg" alt="telegram"></a>
                     <div class="contact__phNum">+ 7 (930) 238-00-00</div>
+                    <div class="but-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
+
             </div>
         </header>
         <main class="main">
-            <div class="main__container container">
+            <div class="main__container">
 
 
-                <div class="ad">
-                    <div class="ad__wrapper"
-                        style="background: transparent; padding: 0;     grid-template-columns: 40% 60%;">
+                <div class="ad contacts ">
+                    <div class="ad__wrapper container">
                         <div class="ad__left" style="padding: 95px 0;">
                             <div class="ad__title" style="color: #1d1d1f;">Контакты</div>
-                        
+
                             <div class="ad__contacts">
 
                                 <div class="ad__contacts" style="margin-top: 44px;">
                                     <div class="ad__advice-title">Офис</div>
-                                    <p class="ad__cup" style="color: #3c3c3c;">г. Москва, г. Москва, Перерва 52 стр.1, Офис 14</p>
+                                    <p class="ad__cup" style="color: #3c3c3c;">г. Москва, г. Москва, Перерва 52 стр.1,
+                                        Офис 14</p>
                                 </div>
                                 <div class="ad__contacts" style="margin-top: 36px;">
                                     <div class="ad__advice-title">Телефон</div>
@@ -62,24 +74,25 @@
                                     <div class="ad__advice-title" style="margin-bottom: 21px;">Наши соцсети</div>
                                     <div class="ad__icons">
                                         <img src="/public/icons/telegram.png" alt="" class="ad__icon">
-                                        <img src="/public/icons/whatsapp.png" alt="" class="ad__icon" style="margin-left: 20px;">
-                                        <img src="/public/icons/youtube.png" alt="" class="ad__icon" style="margin-left: 20px;">
+                                        <img src="/public/icons/whatsapp.png" alt="" class="ad__icon"
+                                            style="margin-left: 20px;">
+                                        <img src="/public/icons/youtube.png" alt="" class="ad__icon"
+                                            style="margin-left: 20px;">
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                         <div class="ad__right">
                             <img src="/public/icons/map.png" style="width: 100%; top: 120px;" alt="Phone"
                                 class="ad__img">
-
                         </div>
                     </div>
 
                 </div>
 
                 <div class="form">
-                    <div class="form__container">
+                    <div class="form__container container">
                         <div class="form__box">
                             <div class="form__title">Заявка на обратный звонок</div>
                             <p class="form__p">Оставьте заявку и наш менеджер свяжется с Вами <br>
