@@ -43,18 +43,23 @@ let video__close = document.querySelector('.video__close');
 let video = document.querySelector('.video');
 let btn = document.querySelector('.btn-sec');
 let iframe = document.querySelector('.video iframe');
-btn.onclick = () => {
-    setTimeout(() => {
-        video.style.opacity = '1';
-    }, 300);
-    video.style.display = 'flex';
-    iframe.src = ' https://www.youtube.com/embed/yfewY3J4Gf0?si=WUt66CnZV3Z1X8Se'
+if (btn){
+    btn.onclick = () => {
+        setTimeout(() => {
+            video.style.opacity = '1';
+        }, 300);
+        video.style.display = 'flex';
+        iframe.src = ' https://www.youtube.com/embed/yfewY3J4Gf0?si=WUt66CnZV3Z1X8Se'
+    }
 }
-video__close.onclick = () => {
-    video.style.display = 'none';
-    video.style.opacity = '0';
-    iframe.src = ' '
+if (video__close){
+    video__close.onclick = () => {
+        video.style.display = 'none';
+        video.style.opacity = '0';
+        iframe.src = ' '
+    }
 }
+
 
 let telegramHs = document.querySelectorAll('.telegramH');
 let whatsappHs = document.querySelectorAll('.whatsappH');
@@ -63,8 +68,11 @@ clickH(telegramHs, 'https://t.me/youwinbro')
 clickH(whatsappHs, 'https://wa.me/79885457238')
 function clickH(arr, id) {
     arr.forEach(item => {
-        item.onclick = () => {
-            location.assign(id)
+        if (item){
+            item.onclick = () => {
+                location.assign(id)
+            }
         }
+      
     })
 }

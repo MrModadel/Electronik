@@ -274,6 +274,11 @@
     }
 }
 @media (max-width: 480px) {
+    .first-ad{
+        .ad__btns {
+            justify-content: start !important;
+        }
+    }
     .contact {
         .contact__phNum {
             display: none;
